@@ -1,0 +1,19 @@
+//199. Binary Tree Right Side View
+
+
+
+class Solution {
+   public List<Integer> rightSideView(TreeNode root) {
+        List<Integer> ans = new ArrayList<Integer>();
+        dfs(root,ans,0);
+        return ans;
+    }
+    public void dfs(TreeNode root, List<Integer> ans, int depth){
+        if(root == null)return;
+        
+        if(depth == ans.size()) ans.add(root.val);
+        
+        dfs(root.right,ans,depth+1);
+        dfs(root.left,ans,depth+1);
+    }
+}
