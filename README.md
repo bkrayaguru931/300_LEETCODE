@@ -1,2 +1,2 @@
-# 600LEETCODE<br>
+# 300LEETCODE<br>
 Start Date:03 Jan 2022
